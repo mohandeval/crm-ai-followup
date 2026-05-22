@@ -1,0 +1,49 @@
+# Environment variables — NEVER commit these
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Data (keep sample only)
+data/raw/
+data/processed/
+
+# LangSmith / secrets
+langsmith_keys.txt

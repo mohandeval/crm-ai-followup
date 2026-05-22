@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# AI CRM Follow-Up — Python Dependencies
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────
+
+# ── Database ─────────────────────────────────────────────────
+psycopg2-binary                # PostgreSQL driver  R$emoved the dependacies ==2.9.9   for python 3.11
+sqlalchemy>=2.0.30             # Optional ORM layer
+
+# ── Vector DB ────────────────────────────────────────────────
+pinecone>=4.1.0                # Pinecone serverless (v4+ uses new API)
+
+# ── LLM / AI ─────────────────────────────────────────────────
+openai>=1.35.0                 # OpenAI chat + embeddings
+langchain>=0.2.5               # LangChain core
+langchain-openai>=0.1.9        # LangChain <-> OpenAI adapter
+langgraph>=0.1.19              # LangGraph workflow orchestration
+langchain-community>=0.2.5     # Community integrations
+
+# ── Data + Validation ─────────────────────────────────────────
+pydantic>=2.7.4                # Structured outputs & validation
+pydantic-settings>=2.3.0       # Settings management
+python-dotenv>=1.0.1           # Load .env files
+pandas>=2.2.2                  # Data wrangling (optional)
+
+# ── Observability ─────────────────────────────────────────────
+langsmith>=0.1.77              # LangSmith tracing
+
+# ── Utilities ────────────────────────────────────────────────
+tenacity>=8.3.0                # Retry logic
+rich>=13.7.1                   # Pretty terminal output
+python-dateutil>=2.9.0         # Date parsing
+
+# ── Testing ──────────────────────────────────────────────────
+pytest>=8.2.2
+pytest-asyncio>=0.23.7
